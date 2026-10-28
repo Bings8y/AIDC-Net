@@ -1,0 +1,543 @@
+{
+ "name": "aidc_leaf_spine",
+ "devices": [
+  {
+   "name": "spine1",
+   "model": "2911",
+   "category": "router",
+   "role": "core_router",
+   "x": 1053,
+   "y": 394,
+   "interfaces": {
+    "GigabitEthernet0/0": "172.16.1.1/30",
+    "GigabitEthernet0/1": "172.16.1.5/30",
+    "GigabitEthernet0/2": "172.16.1.9/30",
+    "Serial0/0/0": "10.99.1.1/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "spine2",
+   "model": "2911",
+   "category": "router",
+   "role": "core_router",
+   "x": 1224,
+   "y": 493,
+   "interfaces": {
+    "GigabitEthernet0/0": "172.16.2.1/30",
+    "GigabitEthernet0/1": "172.16.2.5/30",
+    "GigabitEthernet0/2": "172.16.2.9/30",
+    "Serial0/0/0": "10.99.2.1/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "leaf1",
+   "model": "2911",
+   "category": "router",
+   "role": "edge_router",
+   "x": 338,
+   "y": 928,
+   "interfaces": {
+    "GigabitEthernet0/0": "10.0.1.254/24",
+    "GigabitEthernet0/1": "172.16.1.2/30",
+    "GigabitEthernet0/2": "172.16.2.2/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "tor1",
+   "model": "2960-24TT",
+   "category": "switch",
+   "role": "access_switch",
+   "x": 248,
+   "y": 980,
+   "interfaces": {},
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h11",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 397,
+   "y": 998,
+   "interfaces": {
+    "FastEthernet0": "10.0.1.1/24"
+   },
+   "gateway": "10.0.1.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h12",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 462,
+   "y": 1036,
+   "interfaces": {
+    "FastEthernet0": "10.0.1.2/24"
+   },
+   "gateway": "10.0.1.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "leaf2",
+   "model": "2911",
+   "category": "router",
+   "role": "edge_router",
+   "x": 1053,
+   "y": 928,
+   "interfaces": {
+    "GigabitEthernet0/0": "10.0.2.254/24",
+    "GigabitEthernet0/1": "172.16.1.6/30",
+    "GigabitEthernet0/2": "172.16.2.6/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "tor2",
+   "model": "2960-24TT",
+   "category": "switch",
+   "role": "access_switch",
+   "x": 963,
+   "y": 980,
+   "interfaces": {},
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h21",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 1112,
+   "y": 998,
+   "interfaces": {
+    "FastEthernet0": "10.0.2.1/24"
+   },
+   "gateway": "10.0.2.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h22",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 1177,
+   "y": 1036,
+   "interfaces": {
+    "FastEthernet0": "10.0.2.2/24"
+   },
+   "gateway": "10.0.2.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "leaf3",
+   "model": "2911",
+   "category": "router",
+   "role": "edge_router",
+   "x": 1768,
+   "y": 928,
+   "interfaces": {
+    "GigabitEthernet0/0": "10.0.3.254/24",
+    "GigabitEthernet0/1": "172.16.1.10/30",
+    "GigabitEthernet0/2": "172.16.2.10/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "tor3",
+   "model": "2960-24TT",
+   "category": "switch",
+   "role": "access_switch",
+   "x": 1678,
+   "y": 980,
+   "interfaces": {},
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h31",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 1827,
+   "y": 998,
+   "interfaces": {
+    "FastEthernet0": "10.0.3.1/24"
+   },
+   "gateway": "10.0.3.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "h32",
+   "model": "Server-PT",
+   "category": "server",
+   "role": "end_host",
+   "x": 1892,
+   "y": 1036,
+   "interfaces": {
+    "FastEthernet0": "10.0.3.2/24"
+   },
+   "gateway": "10.0.3.254",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  },
+  {
+   "name": "controller",
+   "model": "2911",
+   "category": "router",
+   "role": "core_router",
+   "x": 266,
+   "y": 462,
+   "interfaces": {
+    "Serial0/0/0": "10.99.1.2/30",
+    "Serial0/0/1": "10.99.2.2/30"
+   },
+   "gateway": "",
+   "interfaces_v6": {},
+   "gateway_v6": "",
+   "vlan": 0,
+   "wireless": false
+  }
+ ],
+ "modules": [
+  {
+   "device": "controller",
+   "slot": "0/0",
+   "module": "HWIC-2T"
+  },
+  {
+   "device": "spine1",
+   "slot": "0/0",
+   "module": "HWIC-2T"
+  },
+  {
+   "device": "spine2",
+   "slot": "0/0",
+   "module": "HWIC-2T"
+  }
+ ],
+ "links": [
+  {
+   "device_a": "spine1",
+   "port_a": "GigabitEthernet0/0",
+   "device_b": "leaf1",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "cross"
+  },
+  {
+   "device_a": "spine2",
+   "port_a": "GigabitEthernet0/0",
+   "device_b": "leaf1",
+   "port_b": "GigabitEthernet0/2",
+   "cable": "cross"
+  },
+  {
+   "device_a": "leaf1",
+   "port_a": "GigabitEthernet0/0",
+   "device_b": "tor1",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor1",
+   "port_a": "FastEthernet0/1",
+   "device_b": "h11",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor1",
+   "port_a": "FastEthernet0/2",
+   "device_b": "h12",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "spine1",
+   "port_a": "GigabitEthernet0/1",
+   "device_b": "leaf2",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "cross"
+  },
+  {
+   "device_a": "spine2",
+   "port_a": "GigabitEthernet0/1",
+   "device_b": "leaf2",
+   "port_b": "GigabitEthernet0/2",
+   "cable": "cross"
+  },
+  {
+   "device_a": "leaf2",
+   "port_a": "GigabitEthernet0/0",
+   "device_b": "tor2",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor2",
+   "port_a": "FastEthernet0/1",
+   "device_b": "h21",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor2",
+   "port_a": "FastEthernet0/2",
+   "device_b": "h22",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "spine1",
+   "port_a": "GigabitEthernet0/2",
+   "device_b": "leaf3",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "cross"
+  },
+  {
+   "device_a": "spine2",
+   "port_a": "GigabitEthernet0/2",
+   "device_b": "leaf3",
+   "port_b": "GigabitEthernet0/2",
+   "cable": "cross"
+  },
+  {
+   "device_a": "leaf3",
+   "port_a": "GigabitEthernet0/0",
+   "device_b": "tor3",
+   "port_b": "GigabitEthernet0/1",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor3",
+   "port_a": "FastEthernet0/1",
+   "device_b": "h31",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "tor3",
+   "port_a": "FastEthernet0/2",
+   "device_b": "h32",
+   "port_b": "FastEthernet0",
+   "cable": "straight"
+  },
+  {
+   "device_a": "spine1",
+   "port_a": "Serial0/0/0",
+   "device_b": "controller",
+   "port_b": "Serial0/0/0",
+   "cable": "serial"
+  },
+  {
+   "device_a": "spine2",
+   "port_a": "Serial0/0/0",
+   "device_b": "controller",
+   "port_b": "Serial0/0/1",
+   "cable": "serial"
+  }
+ ],
+ "dhcp_pools": [],
+ "static_routes": [],
+ "ospf_configs": [
+  {
+   "router": "spine1",
+   "process_id": 1,
+   "router_id": "10.255.0.1",
+   "networks": [
+    {
+     "network": "172.16.0.0",
+     "wildcard": "0.0.255.255",
+     "area": 0
+    },
+    {
+     "network": "10.99.1.0",
+     "wildcard": "0.0.0.3",
+     "area": 0
+    }
+   ]
+  },
+  {
+   "router": "spine2",
+   "process_id": 1,
+   "router_id": "10.255.0.2",
+   "networks": [
+    {
+     "network": "172.16.0.0",
+     "wildcard": "0.0.255.255",
+     "area": 0
+    },
+    {
+     "network": "10.99.2.0",
+     "wildcard": "0.0.0.3",
+     "area": 0
+    }
+   ]
+  },
+  {
+   "router": "leaf1",
+   "process_id": 1,
+   "router_id": "10.255.1.1",
+   "networks": [
+    {
+     "network": "172.16.0.0",
+     "wildcard": "0.0.255.255",
+     "area": 0
+    },
+    {
+     "network": "10.0.1.0",
+     "wildcard": "0.0.0.255",
+     "area": 0
+    }
+   ]
+  },
+  {
+   "router": "leaf2",
+   "process_id": 1,
+   "router_id": "10.255.1.2",
+   "networks": [
+    {
+     "network": "172.16.0.0",
+     "wildcard": "0.0.255.255",
+     "area": 0
+    },
+    {
+     "network": "10.0.2.0",
+     "wildcard": "0.0.0.255",
+     "area": 0
+    }
+   ]
+  },
+  {
+   "router": "leaf3",
+   "process_id": 1,
+   "router_id": "10.255.1.3",
+   "networks": [
+    {
+     "network": "172.16.0.0",
+     "wildcard": "0.0.255.255",
+     "area": 0
+    },
+    {
+     "network": "10.0.3.0",
+     "wildcard": "0.0.0.255",
+     "area": 0
+    }
+   ]
+  },
+  {
+   "router": "controller",
+   "process_id": 1,
+   "router_id": "10.255.9.9",
+   "networks": [
+    {
+     "network": "10.99.1.0",
+     "wildcard": "0.0.0.3",
+     "area": 0
+    },
+    {
+     "network": "10.99.2.0",
+     "wildcard": "0.0.0.3",
+     "area": 0
+    }
+   ]
+  }
+ ],
+ "rip_configs": [],
+ "eigrp_configs": [],
+ "vlans": [],
+ "access_ports": [],
+ "trunks": [],
+ "subinterfaces": [],
+ "validations": [
+  {
+   "check_type": "ping",
+   "from_device": "h11",
+   "to_target": "h21",
+   "expected": "Reply"
+  },
+  {
+   "check_type": "ping",
+   "from_device": "h21",
+   "to_target": "h31",
+   "expected": "Reply"
+  },
+  {
+   "check_type": "ping",
+   "from_device": "h31",
+   "to_target": "h12",
+   "expected": "Reply"
+  },
+  {
+   "check_type": "ping",
+   "from_device": "h12",
+   "to_target": "h22",
+   "expected": "Reply"
+  },
+  {
+   "check_type": "ping",
+   "from_device": "h22",
+   "to_target": "h32",
+   "expected": "Reply"
+  },
+  {
+   "check_type": "ping",
+   "from_device": "h32",
+   "to_target": "h11",
+   "expected": "Reply"
+  }
+ ],
+ "dual_stack": false,
+ "errors": [],
+ "warnings": []
+}

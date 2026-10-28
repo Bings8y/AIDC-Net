@@ -1,0 +1,13 @@
+! AIDC-Net controller links
+!
+interface Serial0/0/0
+ ip ospf cost 1000
+ clock rate 64000
+ no shutdown
+exit
+interface Serial0/0/1
+ ip ospf cost 1000
+ clock rate 64000
+ no shutdown
+exit
+end

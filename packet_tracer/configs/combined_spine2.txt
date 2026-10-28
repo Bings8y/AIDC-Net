@@ -1,0 +1,6 @@
+! spine2 link to the AIDC-Net controller
+!
+interface Serial0/0/0
+ clock rate 64000
+ no shutdown
+end

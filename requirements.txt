@@ -1,0 +1,9 @@
+pandas
+matplotlib
+numpy
+tabulate
+# Only needed on the Linux/Mininet side:
+# os-ken        (or: ryu)
+# prometheus_client
+# Only needed to redraw the Packet Tracer background (packet_tracer/make_background.py):
+pillow

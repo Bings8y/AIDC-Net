@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+~$*
+Thumbs.db
+
+# Not uploaded: reports/docs and generated or archived material (kept locally only)
+*.docx
+*.doc
+*.pdf
+*.ppt
+*.pptx
+*.zip
+report_assets/
+results*/
+archive_mininet_docker/
+packet_tracer/archive/
